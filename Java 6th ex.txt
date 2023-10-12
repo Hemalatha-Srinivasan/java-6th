@@ -1,0 +1,81 @@
+
+a
+
+package calc;
+
+public class a {
+public void add(int a,int b)
+{
+	System.out.println("addition:"+(a+b));
+}
+
+}
+
+b
+
+package calc;
+
+public class b {
+
+	public void sub(int a,int b)
+	{
+		System.out.println("subraction:"+(a-b));
+	}
+
+}
+ 
+
+c
+
+
+package calc;
+
+public class c {
+
+	public void mul(int a,int b)
+	{
+		System.out.println("multiplication:"+(a*b));
+	}
+
+}
+
+package calc;
+
+public class d {
+	public void div(int a,int b)
+	{
+		System.out.println("division:"+(a/b));
+	}
+
+}
+
+
+myexp
+
+import calc.*;
+import java.util.*;
+public class myexcep {
+
+	public static void main(String[] args) {
+      a obj1=new a();
+      obj1.add(5,4);
+      b obj2=new b();
+      obj2.sub(5,4);
+      c obj3=new c();
+      obj3.mul(5,4);
+      d obj4=new d();
+      obj4.div(5,4);
+      try
+      {
+      d obj5=new d();
+      obj5.div(5,0);
+      }
+      catch(Exception e)
+      {
+    	  System.out.println(e);
+      }
+	}
+
+}
+
+
